@@ -3,365 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tierra Alta Bienes Raíces | Terrenos en Arandas, Jalisco</title>
-<meta name="description" content="Terrenos en venta en Arandas, Jalisco. Inversión en tierra alta de calidad, ubicaciones estratégicas y oportunidades de patrimonio familiar.">
+<title>Alto Potencial Residencial | Tierra Alta Bienes Raíces</title>
+<meta name="description" content="Terrenos con avance de construcción y gran potencial residencial en Arandas, Jalisco.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --clay-50: #FAECE7;
-    --clay-100: #F5C4B3;
-    --clay-400: #D85A30;
-    --clay-600: #993C1D;
-    --clay-800: #712B13;
-    --clay-900: #4A1B0C;
-    --paper: #F6F4EE;
-    --paper-alt: #EFEBE2;
-    --ink: #2B2622;
-    --ink-soft: #6B645C;
-    --line: rgba(43,38,34,0.12);
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Inter', sans-serif;
-    background: var(--paper);
-    color: var(--ink);
-    line-height: 1.6;
-  }
-  .display {
-    font-family: 'Fraunces', serif;
-  }
-
-  /* Header */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 6%;
-    border-bottom: 1px solid var(--line);
-  }
-  .logo {
-    font-family: 'Fraunces', serif;
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-  }
-  .logo span { color: var(--clay-600); }
-  nav a {
-    font-size: 0.95rem;
-    color: var(--ink);
-    text-decoration: none;
-    margin-left: 2rem;
-  }
-  nav a:hover { color: var(--clay-600); }
-
-  /* Hero */
-  .hero {
-    position: relative;
-    padding: 5rem 6% 4rem;
-    text-align: center;
-    overflow: hidden;
-  }
-  .hero h1 {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    font-weight: 600;
-    line-height: 1.1;
-    max-width: 850px;
-    margin: 0 auto 1.25rem;
-  }
-  .hero h1 em {
-    font-style: italic;
-    color: var(--clay-600);
-  }
-  .hero p {
-    font-size: 1.15rem;
-    color: var(--ink-soft);
-    max-width: 520px;
-    margin: 0 auto 2.5rem;
-  }
-  .hero-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: var(--clay-600);
-    color: #FFF8F4;
-    padding: 0.9rem 1.8rem;
-    border-radius: 999px;
-    font-weight: 500;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background 0.15s ease;
-  }
-  .hero-cta:hover { background: var(--clay-800); }
-
-  .horizon {
-    width: 100%;
-    height: 90px;
-    display: block;
-    margin-top: 3.5rem;
-  }
-  .horizon path {
-    fill: none;
-    stroke: var(--clay-400);
-    stroke-width: 2;
-  }
-  .horizon .fill {
-    fill: var(--clay-50);
-    stroke: none;
-  }
-
-  /* Listings */
-  .listings {
-    padding: 1rem 6% 5rem;
-    max-width: 1180px;
-    margin: 0 auto;
-  }
-  .listings-head {
-    margin-bottom: 2.5rem;
-    text-align: center;
-  }
-  .listings-head .eyebrow {
-    font-size: 0.85rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--clay-600);
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    display: block;
-  }
-  .listings-head h2 {
-    font-family: 'Fraunces', serif;
-    font-size: 2.2rem;
-    font-weight: 500;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.75rem;
-  }
-  .card {
-    background: #FFFDF9;
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-  .card-img {
-    height: 200px;
-    background: linear-gradient(135deg, var(--clay-50), var(--paper-alt));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--clay-600);
-    font-size: 0.9rem;
-    font-weight: 500;
-    border-bottom: 1px solid var(--line);
-  }
-  .card-body {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    flex: 1;
-  }
-  .card-tag {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--clay-800);
-    background: var(--clay-50);
-    padding: 0.25rem 0.7rem;
-    border-radius: 999px;
-    width: fit-content;
-  }
-  .card h3 {
-    font-family: 'Fraunces', serif;
-    font-size: 1.4rem;
-    font-weight: 500;
-  }
-  .card .location {
-    font-size: 0.9rem;
-    color: var(--ink-soft);
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-  }
-  .card .specs {
-    display: flex;
-    gap: 1.5rem;
-    font-size: 0.9rem;
-    padding: 0.75rem 0;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    margin: 0.25rem 0;
-  }
-  .card .specs div span {
-    display: block;
-    color: var(--ink-soft);
-    font-size: 0.78rem;
-    margin-bottom: 0.15rem;
-  }
-  .card .specs div strong {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  .card .price {
-    font-family: 'Fraunces', serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: var(--clay-800);
-  }
-  .card-btn {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    border: 1px solid var(--clay-400);
-    color: var(--clay-800);
-    background: transparent;
-    padding: 0.75rem;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: background 0.15s ease;
-  }
-  .card-btn:hover { background: var(--clay-50); }
-
-  /* About strip */
-  .about {
-    background: var(--paper-alt);
-    padding: 4rem 6%;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-  }
-  .about-inner {
-    max-width: 760px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .about h2 {
-    font-family: 'Fraunces', serif;
-    font-size: 1.9rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-  .about p {
-    color: var(--ink-soft);
-    font-size: 1.05rem;
-  }
-
-  /* Contact / Footer */
-  footer {
-    padding: 4rem 6% 3rem;
-    text-align: center;
-  }
-  footer .eyebrow {
-    font-size: 0.85rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--clay-600);
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    display: block;
-  }
-  footer h2 {
-    font-family: 'Fraunces', serif;
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-  }
-  .contact-row {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 2.5rem;
-  }
-  .contact-row a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    border: 1px solid var(--line);
-    padding: 0.75rem 1.4rem;
-    border-radius: 999px;
-    text-decoration: none;
-    color: var(--ink);
-    font-size: 0.95rem;
-    font-weight: 500;
-  }
-  .contact-row a.primary {
-    background: var(--clay-600);
-    border-color: var(--clay-600);
-    color: #FFF8F4;
-  }
-  footer .fineprint {
-    font-size: 0.85rem;
-    color: var(--ink-soft);
-  }
-
-  @media (max-width: 640px) {
-    header { padding: 1.25rem 5%; }
-    nav a { margin-left: 1rem; font-size: 0.85rem; }
-    .hero { padding: 3.5rem 5% 2.5rem; }
-  }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-  <div class="logo">Tierra <span>Alta</span></div>
+  <a class="logo" href="index.html">Tierra <span>Alta</span></a>
   <nav>
-    <a href="#terrenos">Terrenos</a>
-    <a href="#contacto">Contacto</a>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#contacto">Contacto</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Tierra firme para <em>tu próximo paso</em></h1>
-  <p>Terrenos en Arandas, Jalisco, con ubicaciones estratégicas, documentación en regla y atención directa de Tierra Alta Bienes Raíces.</p>
-  <a href="#terrenos" class="hero-cta">Ver terrenos disponibles</a>
+<div class="breadcrumb"><a href="index.html">Inicio</a> / Alto Potencial Residencial</div>
 
-  <svg class="horizon" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
-    <path class="fill" d="M0,60 C150,30 300,75 450,45 C600,15 750,60 900,35 C1050,10 1150,50 1200,40 L1200,90 L0,90 Z"></path>
-    <path d="M0,60 C150,30 300,75 450,45 C600,15 750,60 900,35 C1050,10 1150,50 1200,40"></path>
-  </svg>
+<section class="hero">
+  <h1>Alto Potencial <em>Residencial</em></h1>
+  <p>Terrenos con avance de construcción, extras como pozos, bardas y caballerizas, y gran proyección para tu próxima residencia.</p>
 </section>
 
-<section class="listings" id="terrenos">
-  <div class="listings-head">
-    <span class="eyebrow">Disponibilidad actual</span>
-    <h2>Terrenos en venta</h2>
-  </div>
+<section class="content">
   <div class="grid">
 
     <article class="card">
       <div class="card-img">Foto del terreno</div>
       <div class="card-body">
         <span class="card-tag">Disponible</span>
-        <h3>Terreno Bajío de Ratones / Las Viboritas</h3>
-        <p class="location">Ubicación: a 150 m de la Carretera Arandas–Tepa, con acceso propio de 12 m de ancho. Arandas, Jalisco.</p>
-        <div class="specs">
-          <div><span>Superficie</span><strong>1.5 solares</strong></div>
-          <div><span>Uso recomendado</span><strong>Bodega / Industrial</strong></div>
-        </div>
-        <p class="price">Precio a consultar</p>
-        <a class="card-btn" href="https://wa.me/5213318063860" target="_blank" rel="noopener">Contactar por WhatsApp</a>
-      </div>
-    </article>
-
-    <article class="card">
-      <div class="card-img">Foto del terreno</div>
-      <div class="card-body">
-        <span class="card-tag">Disponible</span>
         <h3>Terreno El Saltillo</h3>
-        <p class="location">Ubicación: Colonia El Saltillo, Arandas, Jalisco. Construcción iniciada, barda perimetral, 2 pozos y 2 caballerizas (con espacio para más).</p>
+        <p class="location">Colonia El Saltillo, Arandas, Jalisco. Construcción iniciada, barda perimetral, 2 pozos y 2 caballerizas (con espacio para más).</p>
         <div class="specs">
           <div><span>Superficie</span><strong>1,757 m²</strong></div>
           <div><span>Uso recomendado</span><strong>Residencial de alto nivel</strong></div>
@@ -371,20 +45,168 @@
       </div>
     </article>
 
-    <article class="card">
-      <div class="card-img">Foto del terreno 3</div>
+    <div class="empty-state">
+      <strong>Más opciones próximamente</strong>
+      Seguimos agregando nuevas oportunidades de alto potencial. Contáctanos si buscas algo específico.
+    </div>
+
+  </div>
+</section>
+
+<footer id="contacto">
+  <span class="eyebrow">Hablemos</span>
+  <h2>¿Te interesa este terreno?</h2>
+  <div class="contact-row">
+    <a class="primary" href="https://wa.me/5213318063860" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    <a href="mailto:contacto@tierraalta.mx">contacto@tierraalta.mx</a>
+  </div>
+  <p class="fineprint">Tierra Alta Bienes Raíces · Arandas, Jalisco · © 2026</p>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casas Terminadas | Tierra Alta Bienes Raíces</title>
+<meta name="description" content="Casas terminadas en venta en Arandas y Los Altos de Jalisco.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">Tierra <span>Alta</span></a>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+</header>
+
+<div class="breadcrumb"><a href="index.html">Inicio</a> / Casas Terminadas</div>
+
+<section class="hero">
+  <h1>Casas <em>Terminadas</em></h1>
+  <p>Propiedades listas para habitar en Arandas y Los Altos de Jalisco.</p>
+</section>
+
+<section class="content">
+  <div class="grid">
+    <div class="empty-state">
+      <strong>Próximamente</strong>
+      Estamos preparando nuestra selección de casas terminadas. Escríbenos si buscas algo en particular y te avisamos en cuanto tengamos opciones disponibles.
+    </div>
+  </div>
+</section>
+
+<footer id="contacto">
+  <span class="eyebrow">Hablemos</span>
+  <h2>¿Buscas una casa lista para habitar?</h2>
+  <div class="contact-row">
+    <a class="primary" href="https://wa.me/5213318063860" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    <a href="mailto:contacto@tierraalta.mx">contacto@tierraalta.mx</a>
+  </div>
+  <p class="fineprint">Tierra Alta Bienes Raíces · Arandas, Jalisco · © 2026</p>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tierra Alta Bienes Raíces | Terrenos y propiedades en Arandas, Jalisco</title>
+<meta name="description" content="Terrenos y propiedades en Arandas, Jalisco: lotes industriales, residenciales, de alto potencial, casas terminadas y propiedades en Puerto Vallarta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">Tierra <span>Alta</span></a>
+  <nav>
+    <a href="index.html" class="active">Inicio</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero hero-lg">
+  <h1>Tierra firme para <em>tu próximo paso</em></h1>
+  <p>Terrenos y propiedades en Arandas, Jalisco, con ubicaciones estratégicas, documentación en regla y atención directa de Tierra Alta Bienes Raíces.</p>
+  <a href="#categorias" class="hero-cta">Ver propiedades</a>
+
+  <svg class="horizon" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+    <path class="fill" d="M0,60 C150,30 300,75 450,45 C600,15 750,60 900,35 C1050,10 1150,50 1200,40 L1200,90 L0,90 Z"></path>
+    <path d="M0,60 C150,30 300,75 450,45 C600,15 750,60 900,35 C1050,10 1150,50 1200,40"></path>
+  </svg>
+</section>
+
+<section class="content" id="categorias">
+  <div class="section-head">
+    <span class="eyebrow">Arandas y Los Altos</span>
+    <h2>¿Qué estás buscando?</h2>
+    <p>Explora por categoría para encontrar la propiedad que se ajusta a tu proyecto.</p>
+  </div>
+  <div class="grid">
+
+    <a class="card linkable" href="industrial.html">
+      <div class="card-img">Terrenos Industriales</div>
       <div class="card-body">
-        <span class="card-tag">Disponible</span>
-        <h3>Terreno [Nombre / Lote 3]</h3>
-        <p class="location">Ubicación: [Carretera / colonia, Arandas, Jalisco]</p>
-        <div class="specs">
-          <div><span>Superficie</span><strong>[___ m²]</strong></div>
-          <div><span>Uso de suelo</span><strong>[Habitacional / Mixto]</strong></div>
-        </div>
-        <p class="price">$[Precio]</p>
-        <a class="card-btn" href="https://wa.me/5213318063860" target="_blank" rel="noopener">Contactar por WhatsApp</a>
+        <span class="card-tag">Categoría</span>
+        <h3>Terrenos Industriales</h3>
+        <p class="desc">Lotes con acceso directo a carretera, ideales para bodegas, naves y proyectos comerciales.</p>
+        <span class="card-arrow">Ver terrenos →</span>
       </div>
-    </article>
+    </a>
+
+    <a class="card linkable" href="residencial.html">
+      <div class="card-img">Terrenos Residenciales</div>
+      <div class="card-body">
+        <span class="card-tag">Categoría</span>
+        <h3>Terrenos Residenciales</h3>
+        <p class="desc">Lotes pensados para construir tu casa, con buena ubicación y servicios cercanos.</p>
+        <span class="card-arrow">Ver terrenos →</span>
+      </div>
+    </a>
+
+    <a class="card linkable" href="alto-potencial.html">
+      <div class="card-img">Alto Potencial Residencial</div>
+      <div class="card-body">
+        <span class="card-tag">Categoría</span>
+        <h3>Alto Potencial Residencial</h3>
+        <p class="desc">Terrenos con avance de construcción, extras (pozos, bardas, caballerizas) y gran proyección.</p>
+        <span class="card-arrow">Ver terrenos →</span>
+      </div>
+    </a>
+
+    <a class="card linkable" href="casas.html">
+      <div class="card-img">Casas Terminadas</div>
+      <div class="card-body">
+        <span class="card-tag">Categoría</span>
+        <h3>Casas Terminadas</h3>
+        <p class="desc">Propiedades listas para habitar en Arandas y Los Altos de Jalisco.</p>
+        <span class="card-arrow">Ver casas →</span>
+      </div>
+    </a>
+
+    <a class="card linkable" href="vallarta.html">
+      <div class="card-img">Puerto Vallarta</div>
+      <div class="card-body">
+        <span class="card-tag">Categoría especial</span>
+        <h3>Puerto Vallarta</h3>
+        <p class="desc">Casas y departamentos en Puerto Vallarta, Jalisco — para vivir o invertir frente al mar.</p>
+        <span class="card-arrow">Ver propiedades →</span>
+      </div>
+    </a>
 
   </div>
 </section>
@@ -392,18 +214,549 @@
 <section class="about">
   <div class="about-inner">
     <h2>Tierra que vale la pena</h2>
-    <p>En Tierra Alta Bienes Raíces conocemos cada terreno que ofrecemos: su historia, su documentación y su potencial. Trabajamos con seriedad para que cada operación sea clara, directa y sin sorpresas.</p>
+    <p>En Tierra Alta Bienes Raíces conocemos cada propiedad que ofrecemos: su historia, su documentación y su potencial. Trabajamos con seriedad para que cada operación sea clara, directa y sin sorpresas.</p>
   </div>
 </section>
 
 <footer id="contacto">
   <span class="eyebrow">Hablemos</span>
-  <h2>¿Te interesa alguno de estos terrenos?</h2>
+  <h2>¿Te interesa alguna de estas propiedades?</h2>
   <div class="contact-row">
     <a class="primary" href="https://wa.me/5213318063860" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
     <a href="mailto:contacto@tierraalta.mx">contacto@tierraalta.mx</a>
   </div>
   <p class="fineprint">Tierra Alta Bienes Raíces · Arandas, Jalisco · © 2026</p>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terrenos Industriales | Tierra Alta Bienes Raíces</title>
+<meta name="description" content="Terrenos industriales en Arandas, Jalisco, con acceso a carretera, ideales para bodegas y naves comerciales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">Tierra <span>Alta</span></a>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+</header>
+
+<div class="breadcrumb"><a href="index.html">Inicio</a> / Terrenos Industriales</div>
+
+<section class="hero">
+  <h1>Terrenos <em>Industriales</em></h1>
+  <p>Lotes con acceso directo a carretera, listos para bodegas, naves y proyectos comerciales en Arandas y Los Altos de Jalisco.</p>
+</section>
+
+<section class="content">
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-img">Foto del terreno</div>
+      <div class="card-body">
+        <span class="card-tag">Disponible</span>
+        <h3>Terreno Bajío de Ratones / Las Viboritas</h3>
+        <p class="location">A 150 m de la Carretera Arandas–Tepa, con acceso propio de 12 m de ancho. A 600 m de "Las Víboras Autopartes". Arandas, Jalisco.</p>
+        <div class="specs">
+          <div><span>Superficie</span><strong>1.5 solares</strong></div>
+          <div><span>Uso recomendado</span><strong>Bodega / Industrial</strong></div>
+        </div>
+        <p class="price">Precio a consultar</p>
+        <a class="card-btn" href="https://wa.me/5213318063860" target="_blank" rel="noopener">Contactar por WhatsApp</a>
+      </div>
+    </article>
+
+    <div class="empty-state">
+      <strong>Más terrenos próximamente</strong>
+      Seguimos agregando nuevas oportunidades industriales. Contáctanos si buscas algo específico.
+    </div>
+
+  </div>
+</section>
+
+<footer id="contacto">
+  <span class="eyebrow">Hablemos</span>
+  <h2>¿Te interesa este terreno?</h2>
+  <div class="contact-row">
+    <a class="primary" href="https://wa.me/5213318063860" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    <a href="mailto:contacto@tierraalta.mx">contacto@tierraalta.mx</a>
+  </div>
+  <p class="fineprint">Tierra Alta Bienes Raíces · Arandas, Jalisco · © 2026</p>
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terrenos Residenciales | Tierra Alta Bienes Raíces</title>
+<meta name="description" content="Terrenos residenciales en Arandas, Jalisco, ideales para construir tu casa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">Tierra <span>Alta</span></a>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+</header>
+
+<div class="breadcrumb"><a href="index.html">Inicio</a> / Terrenos Residenciales</div>
+
+<section class="hero">
+  <h1>Terrenos <em>Residenciales</em></h1>
+  <p>Lotes pensados para construir tu casa, con buena ubicación, servicios cercanos y documentación en regla.</p>
+</section>
+
+<section class="content">
+  <div class="grid">
+    <div class="empty-state">
+      <strong>Próximamente</strong>
+      Estamos preparando nuestra selección de terrenos residenciales. Escríbenos si buscas algo en particular y te avisamos en cuanto tengamos opciones disponibles.
+    </div>
+  </div>
+</section>
+
+<footer id="contacto">
+  <span class="eyebrow">Hablemos</span>
+  <h2>¿Buscas un terreno residencial?</h2>
+  <div class="contact-row">
+    <a class="primary" href="https://wa.me/5213318063860" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    <a href="mailto:contacto@tierraalta.mx">contacto@tierraalta.mx</a>
+  </div>
+  <p class="fineprint">Tierra Alta Bienes Raíces · Arandas, Jalisco · © 2026</p>
+</footer>
+
+</body>
+</html>
+
+:root {
+  --clay-50: #FAECE7;
+  --clay-100: #F5C4B3;
+  --clay-400: #D85A30;
+  --clay-600: #993C1D;
+  --clay-800: #712B13;
+  --clay-900: #4A1B0C;
+  --paper: #F6F4EE;
+  --paper-alt: #EFEBE2;
+  --ink: #2B2622;
+  --ink-soft: #6B645C;
+  --line: rgba(43,38,34,0.12);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.6;
+}
+.display { font-family: 'Fraunces', serif; }
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 6%;
+  border-bottom: 1px solid var(--line);
+}
+.logo {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: var(--ink);
+}
+.logo span { color: var(--clay-600); }
+nav a {
+  font-size: 0.95rem;
+  color: var(--ink);
+  text-decoration: none;
+  margin-left: 2rem;
+}
+nav a:hover { color: var(--clay-600); }
+nav a.active { color: var(--clay-600); font-weight: 600; }
+
+/* Breadcrumb */
+.breadcrumb {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.25rem 6% 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.breadcrumb a { color: var(--ink-soft); text-decoration: none; }
+.breadcrumb a:hover { color: var(--clay-600); }
+
+/* Hero */
+.hero {
+  position: relative;
+  padding: 4rem 6% 3rem;
+  text-align: center;
+  overflow: hidden;
+}
+.hero.hero-lg { padding: 5rem 6% 4rem; }
+.hero h1 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.2rem, 5.5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.1;
+  max-width: 850px;
+  margin: 0 auto 1.25rem;
+}
+.hero.hero-lg h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+.hero h1 em { font-style: italic; color: var(--clay-600); }
+.hero p {
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  max-width: 560px;
+  margin: 0 auto 2rem;
+}
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--clay-600);
+  color: #FFF8F4;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.15s ease;
+}
+.hero-cta:hover { background: var(--clay-800); }
+.hero-cta.ghost {
+  background: transparent;
+  border: 1px solid var(--clay-400);
+  color: var(--clay-800);
+}
+.hero-cta.ghost:hover { background: var(--clay-50); }
+
+.horizon {
+  width: 100%;
+  height: 90px;
+  display: block;
+  margin-top: 3rem;
+}
+.horizon path { fill: none; stroke: var(--clay-400); stroke-width: 2; }
+.horizon .fill { fill: var(--clay-50); stroke: none; }
+
+/* Section headers */
+.section-head {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.section-head .eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clay-600);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.section-head h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.section-head p {
+  color: var(--ink-soft);
+  max-width: 560px;
+  margin: 0.75rem auto 0;
+}
+
+/* Generic content section */
+.content {
+  padding: 1rem 6% 5rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* Grid + Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+}
+.card {
+  background: #FFFDF9;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card.linkable:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(43,38,34,0.08);
+}
+.card-img {
+  height: 200px;
+  background: linear-gradient(135deg, var(--clay-50), var(--paper-alt));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clay-600);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  padding: 1rem;
+}
+.card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+.card-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--clay-800);
+  background: var(--clay-50);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  width: fit-content;
+}
+.card-tag.muted {
+  color: var(--ink-soft);
+  background: var(--paper-alt);
+}
+.card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.card .location {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+.card .specs {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin: 0.25rem 0;
+  flex-wrap: wrap;
+}
+.card .specs div span {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  margin-bottom: 0.15rem;
+}
+.card .specs div strong { font-size: 1rem; font-weight: 500; }
+.card .price {
+  font-family: 'Fraunces', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--clay-800);
+}
+.card .desc {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.card-btn {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid var(--clay-400);
+  color: var(--clay-800);
+  background: transparent;
+  padding: 0.75rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.15s ease;
+}
+.card-btn:hover { background: var(--clay-50); }
+.card-arrow {
+  margin-top: auto;
+  font-family: 'Fraunces', serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--clay-600);
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  color: var(--ink-soft);
+  grid-column: 1 / -1;
+}
+.empty-state strong { color: var(--ink); display: block; margin-bottom: 0.4rem; font-family: 'Fraunces', serif; font-size: 1.2rem; }
+
+/* About strip */
+.about {
+  background: var(--paper-alt);
+  padding: 4rem 6%;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.about-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+.about h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.about p { color: var(--ink-soft); font-size: 1.05rem; }
+
+/* Footer */
+footer { padding: 4rem 6% 3rem; text-align: center; }
+footer .eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clay-600);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+footer h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.contact-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.contact-row a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--line);
+  padding: 0.75rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.contact-row a.primary {
+  background: var(--clay-600);
+  border-color: var(--clay-600);
+  color: #FFF8F4;
+}
+footer .fineprint { font-size: 0.85rem; color: var(--ink-soft); }
+
+/* Vallarta theme override */
+body.vallarta {
+  --clay-50: #E6F4F3;
+  --clay-100: #BFE5E2;
+  --clay-400: #2FA89C;
+  --clay-600: #1F7A71;
+  --clay-800: #155A53;
+  --clay-900: #0F3F3A;
+  --paper: #F7FAF9;
+  --paper-alt: #EAF3F1;
+}
+
+@media (max-width: 640px) {
+  header { padding: 1.25rem 5%; }
+  nav a { margin-left: 1rem; font-size: 0.85rem; }
+  .hero { padding: 3rem 5% 2rem; }
+}
+
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puerto Vallarta | Tierra Alta Bienes Raíces</title>
+<meta name="description" content="Casas y departamentos en venta en Puerto Vallarta, Jalisco, para vivir o invertir.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="vallarta">
+
+<header>
+  <a class="logo" href="index.html">Tierra <span>Alta</span></a>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+</header>
+
+<div class="breadcrumb"><a href="index.html">Inicio</a> / Puerto Vallarta</div>
+
+<section class="hero hero-lg">
+  <h1>Tierra Alta <em>Vallarta</em></h1>
+  <p>Casas y departamentos en Puerto Vallarta, Jalisco — para vivir, vacacionar o invertir frente al mar.</p>
+
+  <svg class="horizon" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+    <path class="fill" d="M0,60 C150,30 300,75 450,45 C600,15 750,60 900,35 C1050,10 1150,50 1200,40 L1200,90 L0,90 Z"></path>
+    <path d="M0,60 C150,30 300,75 450,45 C600,15 750,60 900,35 C1050,10 1150,50 1200,40"></path>
+  </svg>
+</section>
+
+<section class="content">
+  <div class="section-head">
+    <span class="eyebrow">Próximamente</span>
+    <h2>Propiedades en Puerto Vallarta</h2>
+    <p>Estamos preparando nuestra selección de casas y departamentos en Puerto Vallarta. Déjanos tus datos y te avisamos en cuanto tengamos opciones disponibles.</p>
+  </div>
+  <div class="grid">
+    <div class="empty-state">
+      <strong>Catálogo en preparación</strong>
+      Si ya tienes una propiedad en mente o quieres ser de los primeros en conocer nuestras opciones, escríbenos por WhatsApp.
+    </div>
+  </div>
+</section>
+
+<footer id="contacto">
+  <span class="eyebrow">Hablemos</span>
+  <h2>¿Buscas propiedad en Puerto Vallarta?</h2>
+  <div class="contact-row">
+    <a class="primary" href="https://wa.me/5213318063860" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    <a href="mailto:contacto@tierraalta.mx">contacto@tierraalta.mx</a>
+  </div>
+  <p class="fineprint">Tierra Alta Bienes Raíces · Puerto Vallarta, Jalisco · © 2026</p>
 </footer>
 
 </body>
