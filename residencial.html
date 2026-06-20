@@ -4,14 +4,58 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Terrenos Residenciales | Tierra Alta Bienes Raíces</title>
-<meta name="description" content="Terrenos residenciales en Arandas, Jalisco, ideales para construir tu casa.">
+<meta name="description" content="Lotes residenciales en venta en Arandas, Jalisco. Ubicados sobre Carretera Tepa–Arandas con acceso directo y excelente ubicación.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .card-img {
+    background: none;
+  }
+  .lotes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  .lote-card {
+    border: 1px solid var(--clay-200);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    background: var(--clay-50);
+  }
+  .lote-card h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem;
+    color: var(--clay-900);
+  }
+  .lote-card .lote-specs {
+    font-size: 0.875rem;
+    color: var(--clay-600);
+    margin: 0 0 0.75rem;
+  }
+  .lote-card .lote-price {
+    font-weight: 600;
+    color: var(--clay-700);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  .section-note {
+    font-size: 0.8rem;
+    color: var(--clay-500);
+    margin-top: 0.5rem;
+  }
+</style>
 </head>
 <body>
-
 <header>
   <a class="logo" href="index.html">Tierra <span>Alta</span></a>
   <nav>
@@ -19,32 +63,63 @@
     <a href="index.html#contacto">Contacto</a>
   </nav>
 </header>
-
 <div class="breadcrumb"><a href="index.html">Inicio</a> / Terrenos Residenciales</div>
-
 <section class="hero">
   <h1>Terrenos <em>Residenciales</em></h1>
-  <p>Lotes pensados para construir tu casa, con buena ubicación, servicios cercanos y documentación en regla.</p>
+  <p>Lotes con frente a carretera en el crucero Arandas–Atotonilco, sobre la Carretera Arandas–Tepa. Ideales para desarrollo habitacional.</p>
 </section>
-
 <section class="content">
   <div class="grid">
-    <div class="empty-state">
-      <strong>Próximamente</strong>
-      Estamos preparando nuestra selección de terrenos residenciales. Escríbenos si buscas algo en particular y te avisamos en cuanto tengamos opciones disponibles.
-    </div>
+    <article class="card">
+      <div class="card-img">
+        <img src="residencial-tepa-portada.jpg" alt="Lotes residenciales Carretera Arandas–Tepa">
+      </div>
+      <div class="card-body">
+        <span class="card-tag">Disponible</span>
+        <h3>Lotes Residenciales · Carretera Arandas–Tepa</h3>
+        <p class="location">Crucero Arandas–Atotonilco, sobre Carretera Arandas–Tepa. Arandas, Jalisco.</p>
+        <div class="specs">
+          <div><span>Superficie por lote</span><strong>~600 m² (aprox.)</strong></div>
+          <div><span>Frente a carretera</span><strong>20 m por sección</strong></div>
+        </div>
+
+        <div class="lotes-grid">
+          <div class="lote-card">
+            <h4>Lote 1</h4>
+            <p class="lote-specs">~600 m² · Sección 1</p>
+            <p class="lote-price">Precio a consultar</p>
+          </div>
+          <div class="lote-card">
+            <h4>Lote 2</h4>
+            <p class="lote-specs">~600 m² · Sección 1</p>
+            <p class="lote-price">Precio a consultar</p>
+          </div>
+          <div class="lote-card">
+            <h4>Lote 3</h4>
+            <p class="lote-specs">~600 m² · Sección 1</p>
+            <p class="lote-price">Precio a consultar</p>
+          </div>
+          <div class="lote-card">
+            <h4>Lote 4</h4>
+            <p class="lote-specs">~600 m² · Sección 1</p>
+            <p class="lote-price">Precio a consultar</p>
+          </div>
+        </div>
+        <p class="section-note">Superficies aproximadas, sujetas a levantamiento topográfico. Se pueden adquirir lotes individuales.</p>
+
+        <a class="card-btn" href="https://wa.me/5213318063860" target="_blank" rel="noopener" style="margin-top:1.5rem;display:inline-block;">Contactar por WhatsApp</a>
+      </div>
+    </article>
   </div>
 </section>
-
 <footer id="contacto">
   <span class="eyebrow">Hablemos</span>
-  <h2>¿Buscas un terreno residencial?</h2>
+  <h2>¿Te interesa algún lote?</h2>
   <div class="contact-row">
     <a class="primary" href="https://wa.me/5213318063860" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
     <a href="mailto:contacto@tierraalta.mx">contacto@tierraalta.mx</a>
   </div>
   <p class="fineprint">Tierra Alta Bienes Raíces · Arandas, Jalisco · © 2026</p>
 </footer>
-
 </body>
 </html>
